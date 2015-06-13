@@ -1,0 +1,42 @@
+
+<!-- data key  form -->
+
+<div class="block-area" id="static-control" ng-controller="dataTypeController">
+    <h3 class="block-title">Programming Language</h3>
+
+    <form class="form-horizontal" role="form" ng-submit="create(language)">
+        <div class="form-group">
+            <label class="col-md-2 control-label">Programing Language</label>
+
+            <div class="col-md-10">
+                <!--<select class="select form-control" ng-model="dataType.language"   ng-init="dataType.dataType.language='Normal case'">-->
+                    <!--<option value="">--- Name Pattern ---</option>-->
+                    <!--<option value="Normal case">Normal case</option>-->
+                    <!--<option value="">Camel case</option>-->
+                <!--</select>-->
+                    <select class="select form-control"  ng-model="dataType.language_id" ng-options="language.id as language.name for language in languages"></select>
+                    <ul ng-repeat="lang in  languages">
+                                <li>{{lang.name}}</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Name</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control input-sm" id="inputName" placeholder="..." ng-model="dataType.name" ng-init="dataType.name = 'a'">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputKey" class="col-md-2 control-label">Key</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control input-sm" id="inputKey" placeholder="..." ng-model="dataType.key" ng-init="dataType.key = 'c'">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-warning btn-sm m-t-10">Create</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+
+<!-- Basic information  form -->
+
+<div class="block-area" id="horizontal" ng-controller="toolsController">
+    <h3 class="block-title">Tool Information</h3>
+    <form class="form-horizontal" role="form" ng-submit="create(tool)">
+        <div class="form-group">
+            <label for="inputName" class="col-md-2 control-label">Name</label>
+            <div class="col-md-10">
+                <input type="text" ng-init="tool.name = 'phuc'" class="form-control input-sm" id="inputName" placeholder="..." ng-model="tool.name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputUrlName" class="col-md-2 control-label">Url Name</label>
+            <div class="col-md-10">
+                <input type="text"  ng-init="tool.name_url = 'url name'" class="form-control input-sm" id="inputUrlName" placeholder="..." ng-model="tool.name_url">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputFeature" class="col-md-2 control-label">Feature</label>
+            <div class="col-md-10">
+                <textarea class="form-control auto-size input-sm" ng-init="tool.features = 'feature'" id="inputFeature" placeholder="..." style="overflow: hidden; word-wrap: break-word; resize: none; height: 48px;" ng-model="tool.features"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputDescription" class="col-md-2 control-label">Description</label>
+            <div class="col-md-10">
+                <textarea class="form-control auto-size input-sm" ng-init="tool.description = 'description'" id="inputDescription" placeholder="..." style="overflow: hidden; word-wrap: break-word; resize: none; height: 48px;" ng-model="tool.description"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-info btn-sm m-t-10">SUBMIT FORM</button>
+            </div>
+        </div>
+    </form>
+</div>
+

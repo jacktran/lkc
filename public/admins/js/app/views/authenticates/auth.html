@@ -1,0 +1,54 @@
+<section id="login" ng-mode='loginShow' ng-init="loginShow = true" >
+    <header>
+        <h1>SUPER ADMIN</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu risus. Curabitur commodo lorem fringilla enim feugiat commodo sed ac lacus. {{count}}</p>
+    </header>
+
+    <div class="clearfix"></div>
+
+<!-- Login -->
+<form class="box tile animated active" ng-show="loginShow" id="box-login"  ng-submit="login(user)">
+    <h2 class="m-t-0 m-b-15">Login</h2>
+    <input type="text" class="login-control m-b-10" placeholder="Email Address" ng-model="user.email">
+    <input type="password" class="login-control" placeholder="Password" ng-model="user.password">
+    <div class="checkbox m-b-20">
+        <label>
+            <input type="checkbox">
+            Remember Me
+        </label>
+    </div>
+    <input type="submit" class="btn btn-sm m-r-5" value="Sign In" />
+
+    <small>
+        <a class="box-switcher" data-switch="box-register"  ng-click="loginShow = false;" href="#/login">Don't have an Account?</a> or
+
+        <a class="box-switcher" data-switch="box-reset" href="#/login">Forgot Password?</a>
+    </small>
+</form>
+
+<!-- Register -->
+<form class="box animated tile active" ng-hide="loginShow" id="box-register" name="registerForm" ng-submit= "registerForm.$valid && create(user)">
+    <h2 class="m-t-0 m-b-15">Register</h2>
+    <input type="text" class="login-control m-b-10" placeholder="Full Name" ng-model="user.name" ng-init="user.name = 'a'" required>
+    <input type="email" class="login-control m-b-10" placeholder="Email Address" ng-model="user.email" ng-init="user.email = 'abc@yahoo.com'" required>
+
+
+    <input type="password" class="login-control m-b-10" placeholder="Password"  ng-model="user.password" ng-init="user.password = 'dragonsred'" equals="{{user.password_confirmation}}" required>
+    <input type="password" class="login-control m-b-20" placeholder="Confirm Password" ng-model="user.password_confirmation" ng-init="user.password_confirmation= 'dragonsred'" equals="{{user.password}}" required>
+
+    <input type="submit" class="btn btn-sm m-r-5" value="Register" />
+
+    <small><a class="box-switcher" data-switch="box-login" href="#/login"  ng-click="loginShow = true">Already have an Account?</a></small>
+</form>
+
+<!-- Forgot Password -->
+<form class="box animated tile" id="box-reset">
+    <h2 class="m-t-0 m-b-15">Reset Password</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu risus. Curabitur commodo lorem fringilla enim feugiat commodo sed ac lacus.</p>
+    <input type="email" class="login-control m-b-20" placeholder="Email Address">
+
+    <button class="btn btn-sm m-r-5">Reset Password</button>
+
+    <small><a class="box-switcher"  ng-click="alert('a')" data-switch="box-login" href="">Already have an Account?</a></small>
+</form>
+</section>
