@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', '23.94.223.135'),
-			'database'  => env('DB_DATABASE', 'admin_likecharm'),
-			'username'  => env('DB_USERNAME', 'admin_likecharm'),
-			'password'  => env('DB_PASSWORD', 'F5gG2A0iJm'),
+			'host'      => env('DB_HOST', ''),
+			'database'  => env('DB_DATABASE', ''),
+			'username'  => env('DB_USERNAME', ''),
+			'password'  => env('DB_PASSWORD', ''),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

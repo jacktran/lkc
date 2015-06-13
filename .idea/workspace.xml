@@ -38,15 +38,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="p_language.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/lang/en/p_language.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="-12.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pagination.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/lang/en/pagination.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,10 +76,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index1.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index1.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/index1.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.5463535">
+            <state line="26" column="0" selection-start="1679" selection-end="1679" vertical-scroll-proportion="-17.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="21" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.25216317">
               <folding />
             </state>
           </provider>
@@ -133,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Modules/Models/PLanguage/Commands/ShowPLanaguageCommand.php" />
         <option value="$PROJECT_DIR$/app/Modules/Models/PLanguage/CommandHandlers/ShowPLanguageCommandHandler.php" />
         <option value="$PROJECT_DIR$/app/Modules/Models/PLanguage/Commands/ShowPLanguageCommand.php" />
         <option value="$PROJECT_DIR$/public/admins/js/app/services/languageService.js" />
@@ -149,6 +148,7 @@
         <option value="$PROJECT_DIR$/public/admins/js/app/controllers/dataTypeController.js" />
         <option value="$PROJECT_DIR$/public/admins/js/app/views/data_type.html" />
         <option value="$PROJECT_DIR$/resources/views/admin/index1.blade.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
       </list>
     </option>
   </component>
@@ -1180,13 +1180,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-06-12.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Infrastructure/PLanguage/EloquentPLanguageRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="623" selection-end="623" vertical-scroll-proportion="-15.692307">
@@ -1293,7 +1286,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/index1.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.5463535">
+        <state line="26" column="0" selection-start="1679" selection-end="1679" vertical-scroll-proportion="-17.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="21" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.25216317">
           <folding />
         </state>
       </provider>
